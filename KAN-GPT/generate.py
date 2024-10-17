@@ -18,7 +18,7 @@ if __name__ == "__main__":
     from config import Config
 
     config = Config()
-    model = GPT(config)
+    model = GPT(config).to(config.device)
 
     model_filepath = os.path.join(config.model_dir, "model.pth")
     model.load_state_dict(torch.load(model_filepath))

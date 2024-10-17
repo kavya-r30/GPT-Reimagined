@@ -9,7 +9,7 @@ from generate import generate
 
 def main():
     config = Config()
-    model = GPT(config)
+    model = GPT(config).to(config.device)
 
     train_loader, test_loader = get_data_loaders(config)
     config.max_iters = len(train_loader)
