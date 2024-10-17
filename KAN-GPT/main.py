@@ -2,8 +2,8 @@ import torch
 import tiktoken
 
 from model import GPT
-from train import Trainer, batch_end_callback
 from config import Config
+from train import Trainer, batch_end_callback
 from dataset_shakespeare import get_data_loaders
 from generate import generate
 
