@@ -2,7 +2,7 @@ import torch
 import tiktoken
 
 from model import GPT
-from train import Trainer
+from train import Trainer, batch_end_callback
 from config import Config
 from dataset_shakespeare import get_data_loaders
 from generate import generate
@@ -15,6 +15,7 @@ def main():
     config.max_iters = len(train_loader)
 
     trainer = Trainer(config, model, train_loader, test_loader)
+    trainer.set_callback('on_batch_end', batch_end_callback)
     trainer.run()
 
     text = 'Lord:\nRise! My people, conquer the north!'

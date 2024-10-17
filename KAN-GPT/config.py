@@ -20,6 +20,7 @@ class Config:
         self.betas = (0.9, 0.98)
         self.weight_decay = 3e-1
         self.grad_norm_clip = 1.0
+        self.save_model_interval = self.max_iters
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
         current_dir = os.path.dirname(os.path.abspath(__file__))

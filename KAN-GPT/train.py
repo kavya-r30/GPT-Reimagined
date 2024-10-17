@@ -88,13 +88,15 @@ class Trainer:
             # Log iteration time to TensorBoard
             self.writer.add_scalar('Time/iter', self.iter_dt, self.iter_num)
 
-            if self.iter_num % config.save_model_interval == 0:
-                self.save_model()
+            # if self.iter_num % config.save_model_interval == 0:
+            #     self.save_model()
 
             # termination conditions
             if config.max_iters is not None and self.iter_num >= config.max_iters:
                 break
                 
+        self.save_model()
+        
         # Close the writer atfer the end of training
         self.writer.close()
         self.create_log_archive()
