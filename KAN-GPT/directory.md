@@ -7,6 +7,7 @@ gpt-reimagined/
 │       └── val.bin
 │
 ├── logs/
+├── models/
 ├── kan.py
 ├── model.py
 ├── train.py
