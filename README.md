@@ -48,13 +48,45 @@ This project contributes to the ongoing research in machine learning architectur
 ## Model architectures
 ### MLP architecture:
 ![MLP architecture](./images/mlp-gpt.png)
-### KAN architecture
-![KAN architecture](./images/kan-gpt.png)
+
+### KAN-GPT architecture
+<div align="center">
+    <img src="./images/kan-gpt.png" alt="KAN-GPT architecture" />
+</div>
 
 ## Generated Results
 GPT (KAN):\
 ![kan-gpt-generated-text](./images/kan-generated-text.png)
 
+# File Directory
+
+<pre><code>
+gpt-reimagined/
+│
+├── __pycache/
+│   └── config.cpython-312.pyc
+│
+├── data/
+│   └── tinyshakespeare/
+│       ├── input.txt
+│       ├── train.bin
+│       └── val.bin
+│
+├── archive_logs/
+├── logs/
+├── models/
+├── kan.py
+├── model.py
+├── train.py
+├── utils.py
+├── dataset_shakespeare.py
+├── config.py
+├── generate.py
+├── main.py
+├── requirements.txt
+└── README.md
+ 
+</code></pre>
 # Contributors
 - [Kavya Rambhia](https://github.com/kavya-r30)
 - [Abhay Upadhyay](https://github.com/urabhay10)
