@@ -47,13 +47,13 @@ This project contributes to the ongoing research in machine learning architectur
 
 ## Model architectures
 ### MLP architecture:
-![MLP architecture](./mlp-gpt.png)
+![MLP architecture](./images/mlp-gpt.png)
 ### KAN architecture
-![KAN architecture](./kan-gpt.png)
+![KAN architecture](./images/kan-gpt.png)
 
 ## Generated Results
 GPT (KAN):\
-![kan-gpt-generated-text](./kan-generated-text.png)
+![kan-gpt-generated-text](./images/kan-generated-text.png)
 
 # Contributors
 - [Kavya Rambhia](https://github.com/kavya-r30)
