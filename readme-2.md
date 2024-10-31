@@ -110,7 +110,7 @@ The goal is to evaluate the comparative performance between KANs and MLPs when u
 GPT-Reimagined/
 ├── data/                          # Dataset (tiny Shakespeare data used here)
 │   ├── tinyshakespeare/
-│   │   ├── input.txt              # Encoded input data
+│   │   ├── input.txt
 │   │   ├── train.bin              # Encoded training data
 │   │   ├── val.bin                # Encoded validation data
 ├── models/                        # Directory for saving trained models
